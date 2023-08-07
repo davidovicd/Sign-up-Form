@@ -1,9 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
+:root{
+  --gray: rgb(235, 235, 235);
+  --green: rgb(25, 87, 27);
+}
+
 body {
   background-image: url("/Sign-up-Form/img/IMG_0760.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   font-family: 'Oswald', sans-serif;
+  display: flex;
+  justify-content: flex-end;
 }
+
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  margin-right: 20px;
+}
+
+.container > * {
+  height: 250px;
+}
+
+header {
+  background-color: var(--gray);
+  padding: 50px;
+}
+
+header p {
+  font-size: 20px;
+}
+
+form {
+  background-color: white;
+  padding: 20px 0;
+}
+
+fieldset {
+  display: flex;
+  justify-content: space-between;
+}
+
+fieldset div {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  background-color: var(--green);
+  border: 0;
+  color: white;
+  margin: 20px;
+  padding: 10px 20px;
+}
+
+footer {
+  background-color: var(--gray);
+}
+
+a {
+  color: var(--green);
+  text-decoration: none;
+}
+
+input:focus{
+  border: 1px solid rgb(15, 73, 106);
+}
+
+.alert {
+  border: 1px solid red;
+}
+
+
+
